@@ -48,8 +48,7 @@ void listarInfracoes(Infracao** head_infracao)
 
     printf("\n");
 
-    while (current != NULL)
-    {
+    while (current != NULL){
         printf("Matricula: %s\n", current->matricula);
         printf("- - - - - - - - - - - - - - - - - - - - - - - - - - -\n");
 
