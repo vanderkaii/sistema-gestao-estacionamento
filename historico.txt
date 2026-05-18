@@ -1,2 +1,143 @@
 [08/05/2026 17:35] Sistema iniciado.
 [08/05/2026 17:36] Sistema iniciado.
+[12/05/2026 22:57] Novo pedido de avença submetido.
+[12/05/2026 22:58] Novo pedido de avença submetido.
+[12/05/2026 23:08] Novo pedido de avença submetido.
+[12/05/2026 23:08] Novo pedido de avença submetido.
+[12/05/2026 23:09] Novo pedido de avença submetido.
+[12/05/2026 23:09] Novo pedido de avença submetido.
+[12/05/2026 23:11] Novo pedido de avença submetido.
+[12/05/2026 23:11] Novo pedido de avença submetido.
+[12/05/2026 23:12] Novo pedido de avença submetido.
+[12/05/2026 23:12] Pedido de avença aprovado.
+[12/05/2026 23:13] Novo pedido de avença submetido.
+[12/05/2026 23:13] Novo pedido de avença submetido.
+[12/05/2026 23:14] Novo pedido de avença submetido.
+[12/05/2026 23:14] Novo pedido de avença submetido.
+[12/05/2026 23:14] Pedido de avença aprovado.
+[12/05/2026 23:15] Novo pedido de avença submetido.
+[12/05/2026 23:15] Novo pedido de avença submetido.
+[12/05/2026 23:15] Novo pedido de avença submetido.
+[12/05/2026 23:16] Pedido de avença aprovado.
+[12/05/2026 23:16] Pagamento de avença recebido.
+[12/05/2026 23:22] Novo pedido de avença submetido.
+[12/05/2026 23:22] Pedido de avença aprovado.
+[12/05/2026 23:24] Novo pedido de avença submetido.
+[12/05/2026 23:24] Pedido de avença rejeitado.
+[12/05/2026 23:25] Novo pedido de avença submetido.
+[12/05/2026 23:25] Novo pedido de avença submetido.
+[12/05/2026 23:25] Pedido de avença aprovado.
+[12/05/2026 23:26] Novo pedido de avença submetido.
+[12/05/2026 23:26] Pedido de avença aprovado.
+[12/05/2026 23:26] Pagamento de avença recebido.
+[12/05/2026 23:26] Novo pedido de avença submetido.
+[12/05/2026 23:26] Pedido de avença aprovado.
+[12/05/2026 23:26] Pagamento de avença recebido.
+[12/05/2026 23:27] Novo pedido de avença submetido.
+[12/05/2026 23:27] Pedido de avença aprovado.
+[12/05/2026 23:27] Pagamento de avença recebido.
+[12/05/2026 23:27] Novo pedido de avença submetido.
+[12/05/2026 23:27] Pedido de avença aprovado.
+[12/05/2026 23:27] Pagamento de avença recebido.
+[12/05/2026 23:29] Novo pedido de avença submetido.
+[12/05/2026 23:29] Pedido de avença aprovado.
+[12/05/2026 23:29] Pagamento de avença recebido.
+[12/05/2026 23:34] Novo pedido de avença submetido.
+[12/05/2026 23:34] Pedido de avença aprovado.
+[12/05/2026 23:34] Pagamento de avença recebido.
+[12/05/2026 23:34] Novo pedido de avença submetido.
+[12/05/2026 23:35] Pedido de avença rejeitado.
+[13/05/2026 01:23] Novo pedido de avença submetido.
+[13/05/2026 01:24] Novo pedido de avença submetido.
+[13/05/2026 01:45] Novo pedido de avença submetido.
+[13/05/2026 01:46] Novo pedido de avença submetido.
+[13/05/2026 01:48] Novo pedido de avença submetido.
+[13/05/2026 01:51] Novo pedido de avença submetido.
+[13/05/2026 01:52] Novo pedido de avença submetido.
+[13/05/2026 01:53] Novo pedido de avença submetido.
+[13/05/2026 01:54] Novo pedido de avença submetido.
+[13/05/2026 01:55] Novo pedido de avença submetido.
+[13/05/2026 01:56] Pedido de avença aprovado.
+[13/05/2026 01:56] Pedido de avença aprovado.
+[13/05/2026 01:57] Infracao registada.
+[13/05/2026 01:58] Novo pedido de avença submetido.
+[13/05/2026 01:58] Pedido de avença aprovado.
+[13/05/2026 01:59] Novo pedido de avença submetido.
+[13/05/2026 02:00] Pedido de avença aprovado.
+[13/05/2026 02:01] Novo pedido de avença submetido.
+[13/05/2026 02:02] Pedido de avença rejeitado.
+[13/05/2026 02:02] Novo pedido de avença submetido.
+[13/05/2026 02:03] Pedido de avença aprovado.
+[13/05/2026 02:09] Novo pedido de avença submetido.
+[13/05/2026 02:12] Novo pedido de avença submetido.
+[13/05/2026 02:12] Pedido de avença aprovado.
+[13/05/2026 02:13] Novo pedido de avença submetido.
+[13/05/2026 02:19] Novo pedido de avença submetido.
+[13/05/2026 02:21] Novo pedido de avença submetido.
+[13/05/2026 02:23] Pedido de avença aprovado.
+[13/05/2026 02:23] Pagamento de avença recebido.
+[13/05/2026 02:35] Infracao registada.
+[13/05/2026 02:45] Infracao registada.
+[13/05/2026 03:04] Infracao registada.
+[13/05/2026 03:05] Infracao registada.
+[13/05/2026 03:08] Infracao registada.
+[13/05/2026 03:09] Infracao registada.
+[13/05/2026 03:10] Novo pedido de avença submetido.
+[13/05/2026 03:11] Pedido de avença aprovado.
+[13/05/2026 03:11] Pagamento de avença recebido.
+[13/05/2026 03:18] Infracao registada.
+[13/05/2026 03:20] Infracao registada.
+[13/05/2026 03:21] Infracao registada.
+[13/05/2026 03:23] Novo pedido de avença submetido.
+[13/05/2026 03:25] Infracao registada.
+[13/05/2026 04:10] Novo pedido de avença submetido.
+[13/05/2026 04:12] Pedido de avença aprovado.
+[13/05/2026 04:12] Pagamento de avença recebido.
+[13/05/2026 04:14] Infracao registada.
+[13/05/2026 04:51] Novo pedido de avença submetido.
+[13/05/2026 04:53] Pedido de avença aprovado.
+[13/05/2026 04:54] Pagamento de avença recebido.
+[13/05/2026 05:06] Novo pedido de avença submetido.
+[13/05/2026 05:23] Novo pedido de avença submetido.
+[13/05/2026 05:41] Novo título avulso criado.
+[13/05/2026 05:48] Novo pedido de avença submetido.
+[13/05/2026 05:49] Pedido de avença aprovado.
+[13/05/2026 05:50] Pagamento de avença recebido.
+[13/05/2026 05:50] Pedido de avença ativado.
+[15/05/2026 05:57] Novo pedido de avença submetido.
+[15/05/2026 05:58] Pedido de avença aprovado.
+[15/05/2026 05:59] Pagamento de avença recebido.
+[15/05/2026 05:59] Pedido de avença ativado.
+[15/05/2026 06:10] Novo título avulso criado.
+[15/05/2026 06:27] Novo título avulso criado.
+[15/05/2026 06:30] Infracao registada.
+[15/05/2026 06:59] Infração registada.
+[15/05/2026 07:40] Infração registada.
+[15/05/2026 07:42] Infração registada.
+[15/05/2026 07:44] Novo título avulso criado.
+[15/05/2026 08:05] Novo título avulso criado.
+[15/05/2026 08:07] Novo título avulso criado.
+[15/05/2026 08:09] Infração registada.
+[15/05/2026 08:13] Novo pedido de avença submetido.
+[15/05/2026 08:13] Pedido de avença aprovado.
+[15/05/2026 08:13] Pagamento de avença recebido.
+[15/05/2026 08:13] Pedido de avença ativado.
+[15/05/2026 08:27] Novo título avulso criado.
+[15/05/2026 08:28] Novo pedido de avença submetido.
+[15/05/2026 08:28] Pedido de avença rejeitado.
+[15/05/2026 08:31] Novo pedido de avença submetido.
+[15/05/2026 08:31] Pedido de avença aprovado.
+[15/05/2026 08:31] Pagamento de avença recebido.
+[15/05/2026 08:31] Pedido de avença ativado.
+[15/05/2026 08:36] Novo título avulso criado.
+[15/05/2026 08:36] Novo pedido de avença submetido.
+[15/05/2026 08:36] Pedido de avença aprovado.
+[15/05/2026 08:38] Pagamento de avença recebido.
+[15/05/2026 08:38] Pedido de avença ativado.
+[15/05/2026 08:39] Infração registada.
+[15/05/2026 08:46] Novo título avulso criado.
+[15/05/2026 08:46] Novo pedido de avença submetido.
+[15/05/2026 08:46] Pedido de avença aprovado.
+[15/05/2026 08:47] Pagamento de avença recebido.
+[15/05/2026 08:47] Pedido de avença ativado.
+[15/05/2026 08:48] Infração registada.

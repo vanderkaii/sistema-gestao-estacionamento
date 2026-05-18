@@ -32,7 +32,7 @@ typedef struct AvencaAtiva {
 
 // Globais para gestão (podem ser passadas por referência no main)
 extern FilaPedidos filaPedidos;
-extern FilaPedidos filaPedidosPagamento;
+extern Pedido* listaPedidosPagamento;
 extern AvencaAtiva* listaAvencasAtivas;
 
 // Protótipos
@@ -41,6 +41,7 @@ void criarPedido(char* matricula, char* nome, char* zona, int mes, int ano);
 void processarProximoPedido(FilaPedidos* filaPedidos);
 void pagarAvenca(char* matricula);
 void listarPedidos();
+void listarPedidosPagamento();
 void listarAvencasAtivas();
 
 #endif

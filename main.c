@@ -2,118 +2,172 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <unistd.h>
+
 #include "avencas.h"
 #include "titulos_avulsos.h"
 #include "historico_sessao.h"
 #include "historico_permanente.h"
 #include "motor_de_pesquisa.h"
 #include "infracoes.h"
+#include "menu.h"
 
 
 void guardarDadosBinarios();
 void carregarDadosBinarios();
 
-void menuAvenças() {
+static void fluxoCliente(void)
+{
     int opcao;
-    char matricula[30], nome[100], zona[10], mes[10];
-    int mes_int, ano_int;
+    char matricula[30];
+    char nome[100];
+    char zona[10];
+    int mes;
+    int ano;
 
-    do {
-        printf("\n--- GESTaO DE AVENcAS ---");
-        printf("\n1. Submeter Pedido");
-        printf("\n2. Processar Proximo Pedido (Aprovar/Rejeitar)");
-        printf("\n3. Registar Pagamento e Ativar Avenca");
-        printf("\n4. Listar Pedidos Pendentes");
-        printf("\n5. Listar Avencas Ativas");
-        printf("\n0. Voltar");
-        printf("\nEscolha: ");
-        scanf("%d", &opcao);
+    do
+    {
+        menuCliente();
+        if (scanf("%d", &opcao) != 1)
+        {
+            scanf("%*s");
+            opcao = -1;
+        }
 
-        switch (opcao) {
+        switch (opcao)
+        {
             case 1:
-                printf("Matricula: "); scanf("%s", matricula);
-                printf("Nome: "); scanf("%s", nome);
-                printf("Zona (ex: C4): "); scanf("%s", zona);
-                printf("Mês/Ano (MM/AAAA): "); scanf("%s", mes);
-                if (sscanf(mes, "%d/%d", &mes_int, &ano_int) == 2)
-                    criarPedido(matricula, nome, zona, mes_int, ano_int);
-                else
-                    printf("Formato inválido. Use MM/AAAA.\n");
+                inserirTitulo(&head_titulos_avulsos);
+                sleep(3);
+                limparTerminal();
                 break;
             case 2:
-                if (filaPedidos.frente == NULL) {
-                    printf("Fila vazia.\n");
-                } else {
-                    processarProximoPedido(&filaPedidos);
-                }
+                printPrompt("Matrícula: ");
+                scanf("%29s", matricula);
+                printPrompt("Nome: ");
+                scanf("%99s", nome);
+                printPrompt("Zona: ");
+                scanf("%9s", zona);
+                printPrompt("Mês (1 - 12): ");
+                scanf("%d", &mes);
+                printPrompt("Ano: ");
+                scanf("%d", &ano);
+                criarPedido(matricula, nome, zona, mes, ano);
+                sleep(3);
+                limparTerminal();
                 break;
             case 3:
-                printf("Matrícula para pagamento: "); scanf("%s", matricula);
+                printPrompt("Insira a Matrícula: ");
+                scanf("%29s", matricula);
                 pagarAvenca(matricula);
+                sleep(3);
+                limparTerminal();
                 break;
             case 4:
+                listarSessao();
+                break;
+            case 0:
+                break;
+            default:
+                printAviso("Opção inválida.\n");
+                break;
+        }
+    }
+    while (opcao != 0);
+}
+
+static void fluxoFiscal(void)
+{
+    int opcao;
+
+    do
+    {
+        menuFiscal();
+        if (scanf("%d", &opcao) != 1)
+        {
+            scanf("%*s");
+            opcao = -1;
+        }
+
+        switch (opcao)
+        {
+            case 1:
+                fiscalizar();
+                sleep(3);
+                break;
+            case 2:
+                processarProximoPedido(&filaPedidos);
+                sleep(3);
+                break;
+            case 3:
                 listarPedidos();
+                sleep(5);
+                break;
+            case 4:
+                listarPedidosPagamento();
+                sleep(5);
                 break;
             case 5:
                 listarAvencasAtivas();
-                break;
-        }
-    } while (opcao != 0);
-}
-
-int main() {
-    int opcao;
-
-    // Carregar dados guardados (Persistência Binária)
-    carregarDadosBinarios();
-    inicializarFila(); // Garante que os ponteiros da fila estão prontos se o ficheiro não existir
-
-    push("Sistema iniciado."); // Registo na Pilha de Sessão
-
-    do {
-        printf("\n========================================");
-        printf("\n   SISTEMA DE GESTÃO DE ESTACIONAMENTO");
-        printf("\n========================================");
-        printf("\n1. Emitir Título (Parquímetro)");
-        printf("\n2. Efetuar Fiscalização");
-        printf("\n3. Gestão de Avenças");
-        printf("\n4. Listar Títulos Ativos");
-        printf("\n5. Ver Histórico da Sessão (Pilha)");
-        printf("\n6. Ver Lista de Infrações");
-        printf("\n0. Sair e Guardar");
-        printf("\n----------------------------------------");
-        printf("\nEscolha: ");
-        scanf("%d", &opcao);
-
-        switch (opcao) {
-            case 1:
-                inserirTitulo(&head_titulos_avulsos);
-                push("Título emitido no parquímetro.");
-                break;
-            case 2:
-                fiscalizar(); // Fluxo sequencial
-                break;
-            case 3:
-                menuAvenças();
-                break;
-            case 4:
-                listarTitulos(&head_titulos_avulsos);
-                break;
-            case 5:
-                listarSessao();
+                sleep(5);
                 break;
             case 6:
-                listarInfracoes(&head_infracao);
+                listarTitulos();
+                sleep(5);
+                break;
+            case 7:
+                listarInfracoes();
+                break;
+            case 8:
+                listarSessao();
                 break;
             case 0:
-                printf("\nA guardar dados e a encerrar...\n");
-                guardarDadosBinarios();
-                limparPilha();
                 break;
             default:
-                printf("\nOpção inválida!");
+                printAviso("Opção inválida.\n");
+                sleep(3);
+                break;
         }
-    } while (opcao != 0);
+    }
+    while (opcao != 0);
+}
 
+int main()
+{
+    int opcao;
+
+    inicializarFila();
+    carregarDadosBinarios();
+
+    do
+    {
+        menuInicial();
+        if (scanf("%d", &opcao) != 1)
+        {
+            scanf("%*s");
+            opcao = -1;
+        }
+
+        switch (opcao)
+        {
+            case 1:
+                fluxoCliente();
+                break;
+            case 2:
+                fluxoFiscal();
+                break;
+            case 3:
+                listarSessao();
+                break;
+            case 0:
+                break;
+            default:
+                printAviso("Opção inválida.\n");
+                break;
+        }
+    }
+    while (opcao != 0);
+
+    guardarDadosBinarios();
     return 0;
 }

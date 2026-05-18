@@ -8,6 +8,7 @@ typedef struct Titulo
   char matricula[30];
   float valor;
   struct tm tm_fim; // Struct do tipo tm que armazena a hora do fim
+  int dia, mes, ano;
   struct Titulo* next;
 } Titulo;
 
@@ -15,8 +16,8 @@ extern Titulo* head_titulos_avulsos;
 
 void pedirValorMatricula(char matricula[30], float* valor);
 Titulo* criarTitulo();
-Titulo* inserirTitulo(Titulo** head);
-void listarTitulos(Titulo** head);
+void inserirTitulo(Titulo** head);
+void listarTitulos();
 void obterHoras();
 
 
