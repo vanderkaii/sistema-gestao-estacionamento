@@ -11,15 +11,6 @@
 
 int pesquisarTitulo(Titulo** head_titulos_avulsos, char* matricula, int horas, int minutos, int dia, int mes, int ano)
 {
-  /*
-  time_t agora = time(NULL);
-  struct tm hora_atual;
-  
-  // Local time separa os valores (horas, minutos, segundos, etc...) do epoch e manda cada um para um campo
-  // do struct tm
-  localtime_r(&agora, &hora_atual);
-  */
-
   Titulo* current = *head_titulos_avulsos;
 
   printf("A Procurar na Lista de Títulos Avulsos...\n");
@@ -34,7 +25,11 @@ int pesquisarTitulo(Titulo** head_titulos_avulsos, char* matricula, int horas, i
       sleep(3);
       
        // Verifica se à hora e data introduzidas, o veículo está a cometer uma infração (Titulo expirado)
-       if (ano != current->ano || mes != current->mes || dia != current->dia || horas > current->tm_fim.tm_hour || (horas == current->tm_fim.tm_hour && minutos > current->tm_fim.tm_min))
+       if (
+        ano != current->ano || 
+        mes != current->mes || 
+        dia != current->dia || horas > current->tm_fim.tm_hour || 
+        (horas == current->tm_fim.tm_hour && minutos > current->tm_fim.tm_min))
        {
          printf("Título Inválido.\n");
          return -1;
@@ -63,7 +58,11 @@ int pesquisarTitulo(Titulo** head_titulos_avulsos, char* matricula, int horas, i
     // Se a matricula for encontrada nas infraçoes, retornar 1
     while (current != NULL)
     {
-      if ( (strcmp(matricula, current->matricula) == 0) && (ano == current->ano) && (mes == current->mes) && (dia == current->dia) )
+      if ( 
+        (strcmp(matricula, current->matricula) == 0) && 
+        (ano == current->ano) && 
+        (mes == current->mes) && 
+        (dia == current->dia) )
       {
         return 1;
       }

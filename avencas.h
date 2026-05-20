@@ -9,11 +9,10 @@ typedef struct Pedido {
     char zona[10];
     int mes;
     int ano; 
-    char estado[40];  // Submetido, Aprovado a aguardar pagamento, Rejeitado
+    char estado[40];
     struct Pedido* next;
 } Pedido;
 
-// Tanto serve para a fila dos Pedidos como para a fila dos Pedidos a aguardar pagamento (filaPedidosPagamento)
 typedef struct FilaPedidos{
     Pedido* frente;
     Pedido* fim;

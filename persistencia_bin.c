@@ -52,9 +52,6 @@ void guardarDadosBinarios() {
     }
 }
 
-
-
-
 void carregarDadosBinarios() {
     // Carregar Títulos
     FILE *fTitulos = fopen("titulos.bin", "rb");

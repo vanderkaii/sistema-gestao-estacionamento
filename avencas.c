@@ -156,7 +156,7 @@ void listarPedidos() {
         printf("ID: %d | Matrícula: %s | Nome: %s | Zona: %s | Estado: %s | Mês/Ano: %02d/%d\n",
             atual->id, atual->matricula, atual->nome, atual->zona, atual->estado, atual->mes, atual->ano);
             
-            atual = atual->next;
+        atual = atual->next;
     }
     printf("\n");
 }
