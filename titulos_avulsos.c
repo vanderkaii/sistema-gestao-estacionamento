@@ -127,15 +127,7 @@ void listarTitulos()
 
   while (current != NULL)
   {
-    printf("
-      Matrícula: %s | 
-      Válido até: %02d:%02d:00 %02d/%02d/%02d", 
-      current->matricula, 
-      current->tm_fim.tm_hour, 
-      current->tm_fim.tm_min, 
-      current->dia, 
-      current->mes, 
-      current->ano);
+    printf("Matrícula: %s | Válido até: %02d:%02d:00 %02d/%02d/%02d", current->matricula, current->tm_fim.tm_hour, current->tm_fim.tm_min, current->dia, current->mes, current->ano);
     printf("\n- - - - - - - - - - - - - - - - - - - - - - - - - - -\n");
     
     current = current->next;
