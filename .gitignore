@@ -56,3 +56,18 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Local build outputs
+/app
+/app_asan
+/app_debug
+/app_warn
+/build/
+/cmake-build-*/
+
+# Runtime data
+/avencas_ativas.bin
+/infracoes.bin
+/pedidos.bin
+/titulos.bin
+/historico.txt

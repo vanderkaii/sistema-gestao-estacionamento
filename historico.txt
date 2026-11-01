@@ -141,3 +141,6 @@
 [15/05/2026 08:47] Pagamento de avença recebido.
 [15/05/2026 08:47] Pedido de avença ativado.
 [15/05/2026 08:48] Infração registada.
+[20/05/2026 23:21] Novo título avulso criado.
+[20/05/2026 23:21] Novo pedido de avença submetido.
+[20/05/2026 23:29] Infração registada.
